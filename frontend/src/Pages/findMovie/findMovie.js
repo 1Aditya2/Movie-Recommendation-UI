@@ -7,11 +7,12 @@ import { Outlet, useLocation } from "react-router-dom";
 function FindMovie() {
   const foundMovies = useSelector((state) => state.recomReducer.foundMovies);
   const location = useLocation();
-  
+  const length=foundMovies.length
+  console.log(foundMovies);
   return (
     <div className="findMovie">
       <div className="find">
-        {location.pathname==='/find' && foundMovies?.map((movie) => (
+        {(location.pathname==='/find' && length!==0)&& foundMovies?.map((movie) => (
           <MovieCard
             title={movie.title}
             poster={movie.poster_path}
@@ -21,6 +22,8 @@ function FindMovie() {
             id={movie.id}
           />
         ))}
+        
+        {(location.pathname==='/find' && length===0) && <p>No movies found!</p>}
       </div>
       <div className="m">
         {location.pathname!=='/find' && <Outlet/>}

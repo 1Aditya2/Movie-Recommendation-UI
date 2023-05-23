@@ -145,6 +145,7 @@ const recomSlice = createSlice({
       })
       .addCase(findMovies.fulfilled, (state, action) => {
         state.foundMovies = action.payload.found;
+        console.log(action.payload.found);
         if (action.payload.found[0] !== undefined) {
           const title = action.payload.found[0].title;
           let storage = JSON.parse(localStorage.getItem("history"));
