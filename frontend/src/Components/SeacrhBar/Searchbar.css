@@ -1,0 +1,37 @@
+.searchbar{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon{
+    border-radius: 5px;
+    width: 7%;
+    height: 65%;
+    background-color: #F6C700;
+    color: black;
+    display: flex;
+    justify-content: center;align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    cursor: pointer;
+}
+.form-search{
+    
+    width: 40%;
+    height: 50%;
+}
+
+.search{
+    outline: none;
+    padding: 5px 10px;
+    font-size: 1em;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+   
+}

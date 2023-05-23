@@ -1,0 +1,21 @@
+.findMovie{
+    /* border: 5px solid green; */
+    position: relative;
+}
+
+.find{
+    /* width: 100vw; */
+
+    gap: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 50px 100px;
+    /* border: 1px solid red; */
+
+}
+.m{
+    top: 0;
+    position: absolute;
+    /* border: 1px solid brown; */
+    width: 100vw;
+}

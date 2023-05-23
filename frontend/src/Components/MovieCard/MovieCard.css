@@ -1,0 +1,56 @@
+.Moviecard{
+    
+  
+    height: fit-content;
+    position: relative;
+    /* z-index: -1; */
+    font-size: 15px;
+}
+.title{
+    
+    font-weight: bold;
+}
+.image{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    /* height: 400px; */
+    opacity: 0.6;
+    scale: 0.99;
+    /* animation: img 1s linear infinite; */
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.image:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+.moviePoster{
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+}
+.details{
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 2px;
+    z-index: 1;
+    position: absolute;
+    /* border: 1px solid salmon; */
+    bottom: 0px;
+    /* background-color: black; */
+    background-color: rgba(29, 29, 29, 0.851);
+}
+.rndr{
+    color: #F6C700;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.rating{
+    display: flex;
+    justify-content: center; align-items: center;
+    gap: 5px;
+}
